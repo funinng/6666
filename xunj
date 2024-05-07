@@ -9,7 +9,7 @@
 
 
 [rewrite_local]
-^https:\/\/api\.xunjiapp\.cn\/whole_user_info_checks_2 url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/xunji61109.js
+^https:\/\/api\.xunjiapp\.cn\/app_login_v3 url script-request-header https://raw.githubusercontent.com/funinng/6666/main/xunj
 
 
 [mitm]
@@ -21,10 +21,12 @@ var obj = JSON.parse($response.body)
 obj={
   "success" : true,
   "res" : {
-    "en_data" : "U2FsdGVkX18x9uBwSqAoBLEZU8Nf6ZkJILGRcWHkSOdD6z7+YZ2v2wr9DqH31hpHwCl3QpTLO7kw9pRq80NpvrjZ43uoLYuig4lhTTVm6cTbRl6rrkwmwwpyAW4hxb6+rnvbQnvzm9kqDTEov/i7hTAG7/va+P6LGZIqRw4+j4GW5ZEHn/b0Fhae7tQYFMz8RVLPS4pmrks9ANd95E3hec5V6iqWyPXXKOYdESNwRgBgcy0vIBVmnvuD+uPauhiax5ijcicmsefFpdw+nZhRLaQYGqmkPP2tVbQDsGs5NNjYoi9OU7mOtDRsNgjOH4tAUyVjnIUfoRbEPdDo9eG3d2pSS2KRgsVHtUBU1+PpyS0s94ywuhCbiUFIzGd+dgCShNa9ig7N/isyWwAvIAjpTQG1vnGnHtZPoaK+/wjdkkBNamyMErFy65TW9VAm7f2xaPnz3QZ2NRdT3h62fq/auURrSt928ddPt66jCYAN5Ls=",
-    "_userid" : "1715080110649"
+    "headimgurl" : "https://thirdwx.qlogo.cn/mmopen/vi_32/2MPhqcOpBq9yLxia6MsGicWC8elPlr4F8NliamgiaJfT0HVPMNdeZnuCuQEAWZgaMGGLELMibhn5BPQJFSq6A2Wlz9R0lg2TOOGHrl9dcWIxn22s/132",
+    "nickname" : "焓老先生",
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiJvRmRFZzFQUzhWMy1RVXVWM0NrVHcxTjF1TmQwIiwiaWF0IjoxNzE1MDcwOTQ4fQ.LAHpcYl3_SKctqCtwZOnmBzSK7-B7i_0dKf8JxYXMrg"
   }
 }
+
 
 $done({
   body: JSON.stringify(obj),
